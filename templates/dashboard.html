@@ -8,15 +8,16 @@
   <input type="button" value= "Delete" class="btn btn-danger btn-sm delet-button"/>
 </form>
 
- 
+<!-- <h1> <u>Dashboard</u> </h1> <br> -->
+<div><h3>Hey ! <span style = "color: rgb(223, 24, 24);"> {{user_data.first_name}} {{user_data.last_name}} </span></h3></div>
 <div class="upload-section">
-  <div class="upload-class">
-    <h1 style="display: inline-block;">Upload Image </h1><h6 style="display: inline-block;">(Public)</h6> 
+<div class="upload-class">
+    <h1 style="display: inline-block;">Upload Image </h1><h6 style="display: inline-block;">(Private)</h6> 
     <form method=post enctype=multipart/form-data action=/upload class="input-group">
-        <input type="file" name="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" multiple="multiple">
-        <input class="btn btn-outline-secondary" type="submit" value="Upload" id="inputGroupFileAddon04">
-    </form>
-  </div>
+    <input type="file" name="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" multiple="multiple">
+    <input class="btn btn-outline-secondary" type="submit" value="Upload" id="inputGroupFileAddon04">
+</form>
+</div>
 </div>
 <!-- <div class="input-group mb-3">
   <input type="file" class="form-control" id="inputGroupFile02">
@@ -24,9 +25,8 @@
 </div>
  -->
 
- 
- <h2 class="m-3">Uploaded Images</h2>
- <hr/>
+
+<h2 class="m-3">Uploaded Images</h2>
 <div class="photo-gallery">
 <ul>
 {% for blob in blobs %}

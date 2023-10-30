@@ -1,0 +1,36 @@
+
+
+
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container mt-4" >
+    <div class="col-lg-4 col-md-6 p-4 mx-auto border rounded  m-6   " >
+  
+        <form method="post"  action="/login" >
+            <h3 class="alert-light text-center p-2 border rounded my-auto">Login User</h3>
+            <div class="form-group m-4">
+                <label for="username">Email :</label>
+                <input type="text" class="form-control form-control-sm" name="username" id="username" placeholder="username">
+                <span id="alert-box-validation" style="color: rgba(255, 0, 0, 0.981);font-size: 10px;"></span>
+            </div>
+            <div class="form-group m-4">
+                <lable for="password">Password :</lable>
+                <input type="password" class="form-control form-control-sm" name="password" id="password" placeholder="*********">
+            </div>
+            <div class="form-group mt-2 mx-1 px-2 row">
+                <div class="text-black-50 alert-light col-6 mt-2"><a href="/" class="text-decoration-none"> Forget Password </a> </div>
+             <div class="d-flex align-items-end flex-column col-6">  <input type="submit" class=" btn btn-info" value="Sign In">
+            </div>
+            <div class="text-black-50 alert-light mt-2">New user ,Please <a href="/signupPage" class="text-decoration-none"> sign Up </a> </div>
+        </div> 
+
+        </form>
+    </div>
+</div>
+
+
+<script src="/static/script/app.js"></script>
+
+
+{% endblock %}
