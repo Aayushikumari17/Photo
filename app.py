@@ -10,9 +10,9 @@ import uuid
 app = Flask(__name__)
 
 # Azure Blob Storage Configuration
-azure_storage_connection_string = "DefaultEndpointsProtocol=https;AccountName=newstorageaccav311;AccountKey=7JQsb/ufASY3sg/zPtrtRkSiFk8yRmhZgvzkhfke+8tXD8YVYwbGbWMQFc1tppOKpUWX8E6dvO2b+AStCtfxMA==;EndpointSuffix=core.windows.net"
+azure_storage_connection_string = "DefaultEndpointsProtocol=https;AccountName=photostor11;AccountKey=vLUut1rGPboRC0v6FV2vKFhK+kwSUiiXR5qufC4TzTXYE+sNXQSs62DxCdFSY7iHq0p406RJzsL0+AStRW6Dxg==;EndpointSuffix=core.windows.net"
 blob_service_client = BlobServiceClient.from_connection_string(azure_storage_connection_string)
-container_name = "image"
+container_name = "photoo"
 
 # Configure session
 app.config['SESSION_TYPE'] = 'filesystem'  # You can choose a different session storage method
@@ -20,10 +20,10 @@ app.config['SECRET_KEY'] = 'your_secret_key'
 Session(app)
 
 # Azure SQL Database connection details
-server = 'image-project-db.database.windows.net'
-database = 'log-user'
-username_db = 'av311241'
-password = '#Abhi@3112'
+server = 'photo.database.windows.net'
+database = 'photodb'
+username_db = 'aayushidb'
+password = 'Aayu@177'
 driver = '{ODBC Driver 17 for SQL Server}'
 
 # Establish a connection to the Azure SQL Database
