@@ -3,10 +3,10 @@
 
 <form id="image-previewer" enctype=multipart/form-data method=post action=/delete>
   <img id="preview-image" />
-  <label for="img_url" style="display: none;"></label>
-  <input type="text" name="img_url" id="img_url_name" disabled style="display: none;">
-  <input type="button" value= "Delete" class="btn btn-danger btn-sm delet-button"/>
-</form>
+  <label for="img_url_name" style="display: none;"></label>
+  <input type="text" name="img_url_name" id="img_url_name" value="initial">
+  <input type="submit" value= "Delete" class="btn btn-danger btn-sm delet-button" id="delete-button"/>
+</form> 
 
 <!-- <h1> <u>Dashboard</u> </h1> <br> -->
 <div><h3>Hey ! <span style = "color: rgb(223, 24, 24);"> {{user_data.first_name}} {{user_data.last_name}} </span></h3></div>
@@ -14,7 +14,7 @@
 <div class="upload-class">
     <h1 style="display: inline-block;">Upload Image </h1><h6 style="display: inline-block;">(Private)</h6> 
     <form method=post enctype=multipart/form-data action=/upload class="input-group">
-    <input type="file" name="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" multiple="multiple">
+    <input type="file" name="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" multiple="multiple" required>
     <input class="btn btn-outline-secondary" type="submit" value="Upload" id="inputGroupFileAddon04">
 </form>
 </div>
