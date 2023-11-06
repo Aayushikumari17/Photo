@@ -8,6 +8,10 @@ body {
   /* background: linear-gradient(to top, #ffffff, #e6e6e6); */
 }
 
+#img_url_name{
+  display: none;
+}
+
 .upload-section{
   text-align: center;
   margin-top: 5.8%;
