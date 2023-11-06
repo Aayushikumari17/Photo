@@ -12,7 +12,7 @@ app = Flask(__name__)
 # Azure Blob Storage Configuration
 azure_storage_connection_string = "DefaultEndpointsProtocol=https;AccountName=photostor11;AccountKey=vLUut1rGPboRC0v6FV2vKFhK+kwSUiiXR5qufC4TzTXYE+sNXQSs62DxCdFSY7iHq0p406RJzsL0+AStRW6Dxg==;EndpointSuffix=core.windows.net"
 blob_service_client = BlobServiceClient.from_connection_string(azure_storage_connection_string)
-container_name = "photoo"
+container_name = "default"
 
 # Configure session
 app.config['SESSION_TYPE'] = 'filesystem'  # You can choose a different session storage method
@@ -182,15 +182,13 @@ def upload():
 @app.route('/delete', methods=['POST'])
 def delete():
     if request.method == 'POST':
-        img_url = request.form['img_url']
-        print(img_url)
-        blob_name = img_url.strip('/')[-1]
-        container_name = img_url.strip('/')[-2]
+        img_url = request.form['img_url_name'].split('/')
+        blob_name = img_url[-1]
+        container_name = img_url[-2]
         container_client = blob_service_client.get_container_client(container_name)
         blob_client = container_client.get_blob_client(blob_name)
         blob_client.delete_blob()
         return redirect(url_for('index'))
-
 
 if __name__ == '__main__':
     app.run(debug=True,host="0.0.0.0", port=int("3000"))
