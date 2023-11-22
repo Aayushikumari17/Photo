@@ -1,4 +1,4 @@
-# Photo
+# Cloud Photo Storage
  Future Ready Talent - Project Documentation
 
 Name – Aayushi Kumari
