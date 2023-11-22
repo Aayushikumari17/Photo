@@ -7,7 +7,7 @@ Name – Aayushi Kumari
 
 <h2>Project Statement</h2>
 
-<h2>Project Aim</h2>
+<h3>Project Aim</h3>
 
 The primary aim of this project is to develop an Azure-based Image Upload and Display Application that empowers users to effortlessly upload images and access them alongside essential information. This application leverages Azure Virtual Machine to ensure a seamless, scalable, and reliable experience. Users can upload images in various formats and enhance them with titles, descriptions, and tags for improved organization and search ability.
 
@@ -19,38 +19,35 @@ This platform caters to a wide range of users, from individuals managing persona
 
 
 <h2>Description</h2> 
-
- 	The application allows users to upload images and then displays the uploaded images with some basic information. You can deploy this project on Azure App Service. 
-Overview:
+The application allows users to upload images and then displays the uploaded images with some basic information. You can deploy this project on Azure App Service.<br> 
+<b>Overview:</b>
 The Azure-based Image Upload and Display Application is a web-based platform designed to allow users to easily upload images and view them alongside basic information. It leverages the capabilities of Azure App Service to ensure scalability, reliability, and a seamless user experience.
 
 <h2>Key Features:</h2>
 
-<h2>1.	Image Upload:</h2>
+<h3>1.	Image Upload:</h3>
+Users can easily upload their images through a user-friendly interface. The application supports a variety of image formats, such as JPEG, PNG, and GIF.
 
-     Users can easily upload their images through a user-friendly interface. The                    application supports a variety of image formats, such as JPEG, PNG, and GIF.
+<h3>2.	Image Information:</h3>
+After uploading an image, users can provide basic information about it, such as a title, description, and tags. This information enhances the searchability and organization of the uploaded images.
 
-<h2>2.	Image Information:</h2>
-
-     After uploading an image, users can provide basic information about it, such as a title, description, and tags. This information enhances the searchability and organization of the uploaded images.
-
-<h2>3.	Image Display:</h2>
+<h3>3.	Image Display:</h3>
 
 Uploaded images and their associated information are displayed in a visually appealing and organized manner. Users can browse through the collection of images and view details by clicking on individual images.
 
-<h2>4.	Search and Filter:</h2>
+<h3>4.	Search and Filter:</h3>
 
 The application offers a search and filter functionality, enabling users to find specific images based on titles, descriptions, or tags. This feature enhances user experience and helps them quickly locate the content they're interested in.
 
-<h2>5.	User Authentication:</h2>
+<h3>5.	User Authentication:</h3>
 
 To ensure data security and user privacy, the application can implement user authentication and authorization using Azure Active Directory or other identity providers.
 
-<h2>6.	Scalability:</h2>
+<h3>6.	Scalability:</h3>
 
 Leveraging Azure App Service, the application can seamlessly handle increased traffic and demand. It can be auto-scaled to accommodate varying numbers of users and concurrent uploads.
 
-<h2>7.	Data Storage:</h2>
+<h3>7.	Data Storage:</h3>
 
 Uploaded images and their associated information are securely stored in Azure Blob Storage or a similar data repository. This ensures reliable and durable storage for the uploaded content.
 
@@ -66,18 +63,18 @@ This project is ideal for individuals or businesses looking to create a user-fri
 
 
 
-Azure Services Used –
-Virtual Machine 
-Azure SQL Database
-Azure Storage account
+<h1>Azure Services Used –</h1>
+<b>1.Virtual Machine </b><br>
+<b>2.Azure SQL Database</b><br>
+<b>3.Azure Storage account</b><br>
 
-Other Services Used – 
-Bash Scripts
-Network security group
+<h1>Other Services Used –</h1> 
+<b>Bash Scripts</b><br>
+<b>Network security group</b><br>
 
-Environment Used-
-VM – Linux (ubuntu 20.04)
-System – Windows 11
+<h1>Environment Used-</h1>
+<b>VM – Linux (ubuntu 20.04)</b><br>
+<b>System – Windows 11</b><br>
 
 
 <h2>Project Walkthrough</h2>
