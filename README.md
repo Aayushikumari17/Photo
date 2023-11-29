@@ -1,8 +1,8 @@
 # Cloud Photo Storage
  Future Ready Talent - Project Documentation
 
-Name – Aayushi Kumari
-Website : https://rb.gy/xuki2j
+Name – Aayushi Kumari   <br>
+Website : https://tinyurl.com/yue4huvh
 
 <h1>Project Title – Cloud Photo Storage</h1>
 
